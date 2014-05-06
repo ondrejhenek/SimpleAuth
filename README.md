@@ -8,9 +8,9 @@ Only 3 easy steps to make authentication work
 
 1. Download the plugin to Plugin folder in your app and modify username and password in `SimpleAuth/Controller/Component/Auth/SimpleAuthenticatie.php`:
 
-		9: $request->data['username'] == 'Your username'
-	   10: &&
-	   11: $request->data['password'] == 'Your password'
+		 9: $request->data['username'] == 'Your username'
+		10: &&
+		11: $request->data['password'] == 'Your password'
 
 
 2. Add to your AppController:
