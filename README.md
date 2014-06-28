@@ -3,15 +3,10 @@ SimpleAuth
 
 Simple authentication plugin for CakePHP without using database
 
-Only 3 easy steps to make authentication work
+Only 4 easy steps to make authentication work
 ---------------------------------------------
 
-1. Download the plugin to Plugin folder in your app and modify username and password in `SimpleAuth/Controller/Component/Auth/SimpleAuthenticatie.php`:
-
-		 9: $request->data['username'] == 'Your username'
-		10: &&
-		11: $request->data['password'] == 'Your password'
-
+1. Download the plugin to Plugin folder
 
 2. Add to your AppController:
 
@@ -36,3 +31,20 @@ Only 3 easy steps to make authentication work
 				'routes' => true
 			),
 		));
+
+4. Set up your username and password in your core.php
+
+		Configure::write('SimpleAuth', array(
+			'username' => 'masterofuniverse',
+			'password' => 'qwerty01',
+			'return' => array(
+				'username' => 'masterofuniverse'
+			)
+		));
+
+You can additionally change SimpleAuth.return array value which is then accessible in session Auth.User
+
+To do
+=====
+
+Throw exception when configuration is not set.
