@@ -5,6 +5,11 @@ class AuthController extends AppController {
 	
 	public $uses = null;
 	
+	public function beforeFilter(){
+		parent::beforeFilter();
+		$this->Auth->allow(array('login'));
+	}
+	
 	public function login(){
 		if ($this->Auth->login()) {
 			return $this->redirect('/');
