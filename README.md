@@ -6,7 +6,7 @@ Simple authentication CakePHP plugin for one admin account without using databas
 Only 4 easy steps to make authentication work
 ---------------------------------------------
 
-1. Download the plugin to Plugin folder
+1. Save the plugin to Plugin/SimpleAuth folder
 
 2. Add to your AppController:
 
@@ -62,4 +62,5 @@ http://book.cakephp.org/2.0/en/core-libraries/components/authentication.html#cre
 To do
 =====
 
-1. Throw exception when configuration is not set.
+1. Use some hashing of password for security purposes :X
+2. Throw exception when configuration is not set.
