@@ -1,7 +1,7 @@
 SimpleAuth
 ==========
 
-Simple authentication plugin for CakePHP without using database
+Simple authentication CakePHP plugin for one admin account without using database.
 
 Only 4 easy steps to make authentication work
 ---------------------------------------------
@@ -44,8 +44,8 @@ Only 4 easy steps to make authentication work
 
 You can change your routing configuration or you can log in and out using ugly url like this:
 
-		www.yourapp.com/simple_auth/auth/login
-		www.yourapp.com/simple_auth/auth/logout
+	www.yourapp.com/simple_auth/auth/login
+	www.yourapp.com/simple_auth/auth/logout
 
 Configuration
 ----------------------
