@@ -35,14 +35,15 @@ Only 4 easy steps to make authentication work
 4. Set up your username and password in your core.php
 
 		Configure::write('SimpleAuth', array(
-			'username' => 'masterofuniverse',
-			'password' => 'qwerty01',
+			'username' => 'YOUR LOGIN INFO',
+			'password' => 'YOUR SECRET PASSWORD',
 			'return' => array(
-				'username' => 'masterofuniverse'
+				'nickname' => 'MAYBE YOUR NAME HERE?'
 			)
 		));
 
-You can additionally change SimpleAuth.return array value which is then accessible in session Auth.User
+You can additionally change SimpleAuth.return array value which is then accessible in session Auth.User. Just don't make return value false, it would break the magic.
+http://book.cakephp.org/2.0/en/core-libraries/components/authentication.html#creating-custom-authentication-objects
 
 To do
 =====
